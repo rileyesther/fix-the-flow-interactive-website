@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Housing Folders</title>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <h1>Housing Folders</h1>
+        <div class="breadcrumb">Home > Opgeslagen Huizen</div>
+    </header>
+
+    <div class="content-container">
+        <div class="top-squares">
+            <div id="folders" class="folder-container">
+                <div class="folder"></div>
+                <div class="folder"></div>
+                <div class="folder"></div>
+                <div class="folder"></div>
+            </div>
+        </div>
+
+        <div class="bottom-squares">
+            <div class="folder-container">
+                <div class="folder"></div>
+                <div class="folder"></div>
+            </div>
+        </div>
+
+        <button class="action-button" onclick="addFolder()">+</button>
+        <button class="action-button" onclick="shareFolders()">Share Folders via Email</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
