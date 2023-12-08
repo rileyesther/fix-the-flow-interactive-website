@@ -1,4 +1,4 @@
-// JavaScript code for dynamic folder creation and email sharing
+
 
 function addFolder() {
     var folderName = prompt("Enter folder name:");
@@ -26,7 +26,7 @@ function shareFolders() {
     console.log("Email sent to: " + email);
     console.log("Folders: " + folderNames.join(', '));
 }
-// Add this function to your existing script.js
+
 function toggleMenu() {
     var menuIcon = document.querySelector('.menu-icon');
     var foldersContainer = document.getElementById('folders');
