@@ -3,8 +3,7 @@ function addNewSquare() {
 
     if (squareName !== null && squareName.trim() !== "") {
         var newSquare = document.createElement("div");
-        newSquare.className = "medium-square"; // Reuse the styling for medium squares
-
+        newSquare.className = "medium-square"; 
         var newNameInput = document.createElement("input");
         newNameInput.type = "text";
         newNameInput.value = squareName;
