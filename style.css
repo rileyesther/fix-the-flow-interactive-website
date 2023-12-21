@@ -92,19 +92,20 @@ header {
 .add-square {
   width: 50px;
   height: 50px;
-  background-color: #009688;
+  background-color: #0171b3;
   border-radius: 50%;
   color: #ffffff;
   font-size: 24px;
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-top: 20px; /* Adjust the margin above the plus sign */
+  right: 10rem;
 }
 
 .add-square:hover {
-  background-color: #00796b;
+  background-color: #015f95;
 }
 
 .sorting-system {
@@ -112,7 +113,7 @@ header {
 }
 
 .sorting-system button {
-  background-color: #4caf50; /* Green */
+  background-color: #0171b3; /* Green */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -122,5 +123,5 @@ header {
 }
 
 .sorting-system button:hover {
-  background-color: #45a049;
+  background-color: #015f95;
 }

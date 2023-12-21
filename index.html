@@ -23,7 +23,12 @@
     <div class="under-header">
         <p>Bewaarde Huizen</p>
         <div class="thin-line"></div>
-        
+        <div class="sorting-system">
+            <button onclick="sortByName()">Sort by Name</button>
+            <button onclick="sortByDate()">Sort by Date</button>
+            
+        </div>
+
         <div class="image-container">
           
             <div class="medium-square"></div>
@@ -32,16 +37,13 @@
             <div class="medium-square"></div>
     
            
-            <div class="add-square" onclick="addNewSquare()">
-                <p>+</p>
-            </div>
+
+        </div>
+        <div class="add-square" onclick="addNewSquare()">
+            <p>+</p>
         </div>
     
-        <div class="sorting-system">
-            <button onclick="sortByName()">Sort by Name</button>
-            <button onclick="sortByDate()">Sort by Date</button>
-            
-        </div>
+        
         <script src="script.js"></script>
 </body>
 </html>
