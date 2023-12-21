@@ -23,6 +23,11 @@ header {
   box-sizing: border-box;
 }
 
+.housevb {
+  max-width: 175px;
+  max-height: 175px;
+}
+
 .background-funda-house,
 .background-funda,
 .background-funda-lamp {
@@ -105,7 +110,7 @@ header {
 .medium-square {
   width: 200px;
   height: 200px;
-  background-color: #828282;
+  background-color: #9f9f9fd0;
   border-radius: 10px;
   margin: 10px; /* Adjust the margin to create space between squares */
 }
