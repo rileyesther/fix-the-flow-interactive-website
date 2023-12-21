@@ -4,40 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Housing Folders</title>
+    <title>Your Sprint Review</title>
 </head>
 <body>
+
     <header>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="logo">
+            <img src="02-funda-Blue.png" alt="funda Logo">
         </div>
-        <h1>Housing Folders</h1>
-        <div class="breadcrumb">Home > Opgeslagen Huizen</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Zoeken">
+        </div>
+        <div class="header-icon">
+             <img src="assets/icons/Heart Filled.svg" >
+            <p><i></i></p>
+        </div>
     </header>
-
-    <div class="content-container">
-        <div class="top-squares">
-            <div id="folders" class="folder-container">
-                <div class="folder"></div>
-                <div class="folder"></div>
-                <div class="folder"></div>
-                <div class="folder"></div>
+    <div class="under-header">
+        <p>Bewaarde Huizen</p>
+        <div class="thin-line"></div>
+        
+        <div class="image-container">
+          
+            <div class="medium-square"></div>
+            <div class="medium-square"></div>
+            <div class="medium-square"></div>
+            <div class="medium-square"></div>
+    
+           
+            <div class="add-square" onclick="addNewSquare()">
+                <p>+</p>
             </div>
         </div>
-
-        <div class="bottom-squares">
-            <div class="folder-container">
-                <div class="folder"></div>
-                <div class="folder"></div>
-            </div>
+    
+        <div class="sorting-system">
+            <button onclick="sortByName()">Sort by Name</button>
+            <button onclick="sortByDate()">Sort by Date</button>
+            
         </div>
-
-        <button class="action-button" onclick="addFolder()">+</button>
-        <button class="action-button" onclick="shareFolders()">Share Folders via Email</button>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>

@@ -1,84 +1,132 @@
-/* Add your styling here */
+@font-face {
+    font-family: "ProximaNova";
+    src: url(./assets/fonts/ProximaNova-Regular.otf)
+}
+
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    font-family: "ProximaNova",sans-serif;
 }
 
 header {
-    background-color: orange;
+    background-color: #ff9900; 
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: #ffffff; 
+    max-width: 100%; 
+    height:60px;
+    margin: 0; 
+    box-sizing: border-box; 
+
+.logo img {
+    max-height: 130px; 
+    margin-right: 5px; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+    margin-left: auto;
+}
+
+.search-bar input {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.menu-icon {
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.4s;
-}
-
-h1 {
-    color: white;
-    margin: 0;
-}
-
-.breadcrumb {
-    color: #fff;
-    margin: 10px 0;
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; /* Add some space between header and content */
-}
-
-.top-squares,
-.bottom-squares {
-    display: flex;
-    margin: 10px;
-}
-
-.folder-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping to the next line */
-    justify-content: center; /* Centers the squares horizontally */
-}
-
-.folder {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.action-button {
-    margin: 10px;
-    padding: 8px 16px;
-    background-color: orange;
-    color: white;
+    width: 500px; 
     border: none;
-    cursor: pointer;
     border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s;
+    background-color: #ffffff; 
 }
 
-.action-button:hover {
-    background-color: #ff8c00;
+.header-icon {
+    display: flex;
+    margin-left: auto; 
+    padding:10px;
+}
+
+.header-icon img {
+    max-height: 40px; 
+}
+
+.under-header {
+    text-align: center; 
+    margin-top: 70px; 
+}
+
+.under-header p {
+    color: #000000f7; 
+    margin: 30px 0 20; 
+    font-size: 20px;
+    
+}
+
+.thin-line {
+    width: 50%; /* Adjust the width of the line as needed */
+    height: 1px; /* Adjust the height of the line */
+    background-color: #888888; /* Grey color for the line */
+    margin: 50px auto; /* Adjust the margin to center the line */
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Adjusted to start from the left */
+    align-items: flex-start;
+    max-width: 800px; /* Adjust the max-width of the container */
+    margin: 0 auto;
+}
+
+
+.medium-square {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 10px; /* Adjust the margin to create space between squares */
+}
+
+
+
+.add-square {
+    width: 50px;
+    height: 50px;
+    background-color: #009688;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust the margin above the plus sign */
+}
+
+.add-square:hover {
+    background-color: #00796b;
+}
+
+
+.sorting-system {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.sorting-system button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust the margin between buttons */
+    cursor: pointer;
+}
+
+.sorting-system button:hover {
+    background-color: #45a049;
 }

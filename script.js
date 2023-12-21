@@ -1,36 +1,41 @@
+function addNewSquare() {
+    var squareName = prompt("Enter the name for the new square:");
 
+    if (squareName !== null && squareName.trim() !== "") {
+        var newSquare = document.createElement("div");
+        newSquare.className = "medium-square"; // Reuse the styling for medium squares
 
-function addFolder() {
-    var folderName = prompt("Enter folder name:");
-    if (folderName) {
-        var foldersContainer = document.getElementById('folders');
-        var newFolder = document.createElement('div');
-        newFolder.className = 'folder';
-        newFolder.textContent = folderName;
-        foldersContainer.appendChild(newFolder);
+        var newNameInput = document.createElement("input");
+        newNameInput.type = "text";
+        newNameInput.value = squareName;
+        newNameInput.disabled = true;
+        newNameInput.className = "square-name";
+
+        newSquare.appendChild(newNameInput);
+
+        var imageContainer = document.querySelector(".image-container");
+        imageContainer.insertBefore(newSquare, imageContainer.firstChild);
     }
 }
 
-function shareFolders() {
-    var folders = document.querySelectorAll('.folder');
-    var folderNames = [];
-    
-    folders.forEach(function(folder) {
-        folderNames.push(folder.textContent);
+
+function sortByName() {
+    var squares = document.querySelectorAll('.medium-square');
+    var sortedSquares = Array.from(squares).sort((a, b) => {
+        var nameA = a.querySelector('.square-name').value.toUpperCase();
+        var nameB = b.querySelector('.square-name').value.toUpperCase();
+        return nameA.localeCompare(nameB);
     });
 
-    var email = prompt("Enter email address to share folders:");
-    
-    
-    
-    console.log("Email sent to: " + email);
-    console.log("Folders: " + folderNames.join(', '));
+    var container = document.querySelector(".image-container");
+    container.innerHTML = ""; // Clear the container
+
+    sortedSquares.forEach(square => {
+        container.appendChild(square);
+    });
 }
 
-function toggleMenu() {
-    var menuIcon = document.querySelector('.menu-icon');
-    var foldersContainer = document.getElementById('folders');
-
-    menuIcon.classList.toggle('open');
-    foldersContainer.classList.toggle('menu-open');
+function sortByDate() {
+    // Add sorting by date logic here
+    alert("Sorting by date is not implemented yet.");
 }
