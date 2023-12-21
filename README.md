@@ -6,7 +6,13 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## User Story
-<!-- Schrijf de user story waar je aan hebt gewerkt  -->
+
+#User story:huizen bewaren en delen op de Funda website
+
+Als gebruiker van Funda wil ik een manier hebben om huizen die ik interessant vind te kunnen bewaren en te kunnen delen met anderen.
+
+#acceptatiecriteria:
+
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
