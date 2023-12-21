@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #e6f1f6, #f4f4f4);
   font-family: "ProximaNova", sans-serif;
 }
 
@@ -21,6 +21,27 @@ header {
   height: 60px;
   margin: 0;
   box-sizing: border-box;
+}
+
+.background-funda-house,
+.background-funda,
+.background-funda-lamp {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -10;
+}
+
+.background-funda-house {
+  left: 10%;
+}
+
+.background-funda {
+  left: 40%;
+}
+
+.background-funda-lamp {
+  left: 75%;
 }
 
 .logo img {
@@ -68,7 +89,7 @@ header {
 .thin-line {
   width: 50%; /* Adjust the width of the line as needed */
   height: 1px; /* Adjust the height of the line */
-  background-color: #888888; /* Grey color for the line */
+  background-color: #505050; /* Grey color for the line */
   margin: 50px auto; /* Adjust the margin to center the line */
 }
 
@@ -84,7 +105,7 @@ header {
 .medium-square {
   width: 200px;
   height: 200px;
-  background-color: #e0e0e0;
+  background-color: #828282;
   border-radius: 10px;
   margin: 10px; /* Adjust the margin to create space between squares */
 }
@@ -125,4 +146,3 @@ header {
 .sorting-system button:hover {
   background-color: #015f95;
 }
-
